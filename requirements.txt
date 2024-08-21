@@ -57,6 +57,7 @@ python-dotenv==1.0.0
 pytz==2023.3
 PyYAML==6.0.1
 redis==4.3.4
+requests==2.31.0
 rich==12.6.0
 sentencepiece==0.1.99
 service-identity==21.1.0
