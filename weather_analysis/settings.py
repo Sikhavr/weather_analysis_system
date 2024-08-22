@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-*1#f1dfpg$z#q*)qg=v77=fss$sbu@--%v@1r-zq8d)@!0$emq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['weather-analysis-system.onrender.com', '127.0.0.1']
 
+PORT = os.getenv('PORT', '8000')
 
 # Application definition
 
@@ -124,4 +125,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-PORT = os.getenv('PORT', '8000')
